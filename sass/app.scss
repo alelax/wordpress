@@ -1,0 +1,15 @@
+/*Theme config by comments*/
+@import 'back_office_config';
+
+/* Only Bootstrap grid import */
+@import 'bootstrap/bootstrap-grid-custom';
+
+/* Variables and commons features import */
+@import 'variables';
+@import 'common';
+
+/* Partials components import */
+@import '_partials/_header';
+@import '_partials/_articles';
+@import '_partials/_footer';
+@import '_partials/_sidebar';

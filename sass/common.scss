@@ -1,0 +1,21 @@
+body {
+   margin: 0 !important;
+   font-family: 'Lora', sans-serif;
+   max-width: 100%;
+}
+
+a {
+   text-decoration: none;
+   color: rgb(15, 38, 88);
+}
+
+@media (min-width: 768px) {
+   .right-md-separator {
+      border-right: 1px solid $secondary_theme_color;
+   }
+
+   .bottom-md-separator {
+      border-bottom: 1px solid $secondary_theme_color;
+   }
+
+}
