@@ -19,7 +19,7 @@
             <h1 class="blog-title col-12 pl-md-4">
                <!-- Inseriso link alla home e titolo blog -->
                <a href="<?php bloginfo('url'); ?>">
-                  <?php bloginfo('name'); ?>
+                  <?php bloginfo( 'name' ); ?>
                </a>
             </h1>
 

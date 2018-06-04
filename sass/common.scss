@@ -9,6 +9,10 @@ a {
    color: rgb(15, 38, 88);
 }
 
+.bottom-sm-separator {
+   border-bottom: 1px solid $secondary_theme_color;
+}
+
 @media (min-width: 768px) {
    .right-md-separator {
       border-right: 1px solid $secondary_theme_color;

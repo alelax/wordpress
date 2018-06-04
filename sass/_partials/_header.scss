@@ -6,16 +6,11 @@ $header_lg_height : 300px;
    width: 100%;
    height: $header_sm_height;
    padding: 30px 0;
-   //background-size: cover;
-   
-
-
 }
 
 header {
 
    background-color: rgba(255,255,255,0.15);
-   //margin-top: 30px;
    border: 3px solid $primary_theme_color;
    height: $header_sm_height;
 
@@ -45,14 +40,12 @@ header {
    .wrapper-header {
       width: 100%;
       height: $header_md_height;
-      //padding: 30px 0;
-
    }
+
    header {
-      //background-color: rgba(12, 235, 235, 0.56);
       height: $header_md_height;
       margin-bottom: 30px;
-      position: sticky;
+      //position: sticky;
 
       .custom-row {
          @include make-row();
@@ -64,7 +57,6 @@ header {
          text-align: left;
          font-size: 38px;
          height: $header_md_height / 2;
-         //line-height: $header_md_height / 2;
       }
 
       .nav-items-cnt {
@@ -84,7 +76,7 @@ header {
                height: ($header_md_height / 3.5);
                line-height: $header_md_height / 6;
                min-width: 30px;
-               background-color: $primary_theme_color;
+               background-color: rgba(25, 46, 124, 0.80);;
                border: 3px solid rgba(0,0,0,0);
                padding: 0 10px;
 
@@ -99,7 +91,7 @@ header {
 
                &:hover{
                   box-sizing: border-box;
-                  background-color: white;
+                  background-color: rgba(255, 255, 255, 0.70);
                   border: 3px solid $primary_theme_color;
 
                   a {
@@ -150,8 +142,6 @@ header {
                height: ($header_lg_height / 3);
                line-height: $header_lg_height / 6;
                min-width: 35px;
-               background-color: $primary_theme_color;
-
 
                a {
                   min-width: 35px;

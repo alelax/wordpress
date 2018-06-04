@@ -4155,6 +4155,220 @@ html {
   }
 }
 
+.text-monospace {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-nowrap {
+  white-space: nowrap !important;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+@media (min-width: 576px) {
+  .text-sm-left {
+    text-align: left !important;
+  }
+
+  .text-sm-right {
+    text-align: right !important;
+  }
+
+  .text-sm-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-md-left {
+    text-align: left !important;
+  }
+
+  .text-md-right {
+    text-align: right !important;
+  }
+
+  .text-md-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-lg-left {
+    text-align: left !important;
+  }
+
+  .text-lg-right {
+    text-align: right !important;
+  }
+
+  .text-lg-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-xl-left {
+    text-align: left !important;
+  }
+
+  .text-xl-right {
+    text-align: right !important;
+  }
+
+  .text-xl-center {
+    text-align: center !important;
+  }
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.font-weight-light {
+  font-weight: 300 !important;
+}
+
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+.font-italic {
+  font-style: italic !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+a.text-primary:hover,
+a.text-primary:focus {
+  color: #0062cc !important;
+}
+
+.text-secondary {
+  color: #6c757d !important;
+}
+
+a.text-secondary:hover,
+a.text-secondary:focus {
+  color: #545b62 !important;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+a.text-success:hover,
+a.text-success:focus {
+  color: #1e7e34 !important;
+}
+
+.text-info {
+  color: #17a2b8 !important;
+}
+
+a.text-info:hover,
+a.text-info:focus {
+  color: #117a8b !important;
+}
+
+.text-warning {
+  color: #ffc107 !important;
+}
+
+a.text-warning:hover,
+a.text-warning:focus {
+  color: #d39e00 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+a.text-danger:hover,
+a.text-danger:focus {
+  color: #bd2130 !important;
+}
+
+.text-light {
+  color: #f8f9fa !important;
+}
+
+a.text-light:hover,
+a.text-light:focus {
+  color: #dae0e5 !important;
+}
+
+.text-dark {
+  color: #343a40 !important;
+}
+
+a.text-dark:hover,
+a.text-dark:focus {
+  color: #1d2124 !important;
+}
+
+.text-body {
+  color: #212529 !important;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.text-black-50 {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
 /* Variables and commons features import */
 
 body {
@@ -4166,6 +4380,10 @@ body {
 a {
   text-decoration: none;
   color: #0f2658;
+}
+
+.bottom-sm-separator {
+  border-bottom: 1px solid #8e8f94;
 }
 
 @media (min-width: 768px) {
@@ -4225,8 +4443,6 @@ header .hamburger-icon {
   header {
     height: 245px;
     margin-bottom: 30px;
-    position: -webkit-sticky;
-    position: sticky;
   }
 
   header .custom-row {
@@ -4268,7 +4484,7 @@ header .hamburger-icon {
     height: 70px;
     line-height: 40.83333333px;
     min-width: 30px;
-    background-color: rgba(25, 46, 124, 0.93);
+    background-color: rgba(25, 46, 124, 0.8);
     border: 3px solid rgba(0, 0, 0, 0);
     padding: 0 10px;
   }
@@ -4282,7 +4498,7 @@ header .hamburger-icon {
   header .nav-items-cnt .nav-item li:hover {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
     border: 3px solid rgba(25, 46, 124, 0.93);
   }
 
@@ -4333,7 +4549,6 @@ header .hamburger-icon {
     height: 100px;
     line-height: 50px;
     min-width: 35px;
-    background-color: rgba(25, 46, 124, 0.93);
   }
 
   header .nav-items-cnt .nav-item li a {
@@ -4342,12 +4557,12 @@ header .hamburger-icon {
   }
 }
 
-.articles-cnt .article {
+.articles-cnt .article-preview {
   margin: 10px 0px;
   padding: 10px;
 }
 
-.articles-cnt .article h2.article-title {
+.articles-cnt .article-preview h2.article-title {
   margin: 0 0 5px 0;
   height: 32px;
   min-width: 150px;
@@ -4355,14 +4570,14 @@ header .hamburger-icon {
   color: rgba(25, 46, 124, 0.93);
 }
 
-.articles-cnt .article h2.article-title a {
+.articles-cnt .article-preview h2.article-title a {
   font-size: 24px;
   height: 100%;
   height: 32px;
   line-height: 32px;
 }
 
-.articles-cnt .article .article-excerpt {
+.articles-cnt .article-preview .article-excerpt {
   font-size: 13px;
   font-family: 'Playfair Display', sans-serif !important;
   padding: 0 10px 10px 0;
@@ -4370,12 +4585,12 @@ header .hamburger-icon {
 }
 
 @media (min-width: 768px) {
-  .articles-cnt .article {
+  .articles-cnt .article-preview {
     margin: 10px 0;
     padding: 10px 10px 10px 0;
   }
 
-  .articles-cnt .article h2.article-title {
+  .articles-cnt .article-preview h2.article-title {
     margin: 0 0 5px 0;
     height: 32px;
     min-width: 150px;
@@ -4383,14 +4598,14 @@ header .hamburger-icon {
     color: rgba(25, 46, 124, 0.93);
   }
 
-  .articles-cnt .article h2.article-title a {
+  .articles-cnt .article-preview h2.article-title a {
     font-size: 24px;
     height: 100%;
     height: 32px;
     line-height: 32px;
   }
 
-  .articles-cnt .article .article-excerpt {
+  .articles-cnt .article-preview .article-excerpt {
     font-size: 13px;
     font-family: 'Playfair Display', sans-serif !important;
     padding: 0 10px 10px 0;
@@ -4594,5 +4809,96 @@ aside#sidebar div ul li {
   padding-left: 0;
   margin: 5px 0;
   font-size: 13px;
+}
+
+div.article-cnt div.article {
+  margin-bottom: 35px;
+}
+
+div.article-cnt div.article h2.article-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+div.article-cnt div.article p.article-category,
+div.article-cnt div.article p.article-tags {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+div.article-cnt div.article p span.fixed-txt {
+  font-style: oblique;
+}
+
+div.article-cnt div.article p.article-tags a {
+  display: inline-block;
+  background-color: rgba(25, 46, 124, 0.93);
+  padding: 3px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  color: #FFF;
+}
+
+div.article-cnt div.article p.article-tags a:hover {
+  background-color: rgba(232, 87, 15, 0.64);
+}
+
+div.comments div.comment-respond > * {
+  margin: 1px 0;
+}
+
+div.comments div.comment-respond h3 {
+  margin-bottom: 0;
+}
+
+div.comments div.comment-respond form p.logged-in-as {
+  margin-top: 0;
+}
+
+div.comments div.comment-respond form p.logged-in-as a {
+  font-size: 12px;
+}
+
+div.comments div.comment-respond form p.comment-form-comment label {
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: underline;
+  position: absolute;
+}
+
+div.comments div.comment-respond form p.comment-form-comment textarea {
+  font-family: 'Lora', sans-serif;
+  margin-top: 25px;
+  resize: horizontal;
+}
+
+div.comments div.comment-respond form p.form-submit input {
+  border: none;
+  padding: 10px 30px;
+  font-size: 14px;
+  line-height: 14px;
+  background-color: rgba(25, 46, 124, 0.93);
+  color: #FFF;
+  border-radius: 10PX;
+  -webkit-box-shadow: 0 9px #8e8f94;
+          box-shadow: 0 9px #8e8f94;
+  position: relative;
+}
+
+div.comments div.comment-respond form p.form-submit input:hover {
+  top: 3px;
+  background-color: #192e7c;
+  -webkit-box-shadow: 0 6px #727275;
+          box-shadow: 0 6px #727275;
+}
+
+div.comments div.comment-respond form p.form-submit input:active {
+  outline: none;
+  top: 3px;
+  background-color: #192e7c;
+  -webkit-box-shadow: 0 0 #727275;
+          box-shadow: 0 0 #727275;
 }
 

@@ -133,40 +133,15 @@ footer {
 @include media-breakpoint-up(lg) {
 
    footer {
-      // height: $footer_lg_height;
+
       height: auto;
       .custom-row {
 
-         // height: $footer_lg_height;
-height: auto;
+         height: auto;
          #footer-sidebars-cnt {
             padding: 15px 0;
-            // height: $footer_lg_height;
-height: auto;
-
-
+            height: auto;
          }
-
       }
    }
-
 }
-
-
-// #footer-sidebar1 {
-// float: left;
-// width: 260px;
-// margin-left:10px;
-// margin-right:10px;
-// }
-//
-// #footer-sidebar2 {
-// float: left;
-// width: 260px;
-// margin-right:5px;
-// }
-//
-// #footer-sidebar3 {
-// float: left;
-// width: 260px;
-// }
