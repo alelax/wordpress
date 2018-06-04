@@ -4,42 +4,26 @@
 
       <div class="custom-row d-flex flex-wrap">
 
-         <div class="articles-cnt col-lg-9 d-flex justify-content-lg-between flex-wrap p-0 px-lg-5">
+         <div class="articles-cnt col-lg-12 d-flex p-0 px-lg-5">
 
             <!-- Start the Loop. -->
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-               <div class="article-preview col-md-6 col-lg-5">
+               <div class="article col-12 px-2 px-md-0 bottom-sm-separator">
                      <!-- Display the Title as a link to the Post's permalink. -->
-                     <h2 class="article-title">
+                     <h2 class="article-title bottom-sm-separator">
                         <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to<?php the_title_attribute(); ?>">
                            <?php the_title(); ?>
                         </a>
                      </h2>
 
-                     <div class="article-excerpt">
+                     <div class="article-content col-lg-8 mx-md-auto text-justify">
                         <p>
-                           <?php
-                              $num_of_character = 35;
-                              echo excerpt($num_of_character);
-                           ?>
+                           <?php the_content(); ?>
                         </p>
                      </div>
 
-                  <!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
-                  <small class="article-date"><?php the_time('F jS, Y'); ?>, by <?php the_author_posts_link(); ?></small>
                </div>
-
-<?php /*
-               <!-- Display a comma separated list of the Post's Categories. -->
-
-               <p class="postmetadata"><?php _e( 'Related tag: ' ); ?> <?php the_category( ', ' ); ?></p>
-
-               <p>
-
-               </p>
-
-*/?>
 
             <?php endwhile; else : ?>
 
@@ -51,7 +35,6 @@
             <?php endif; ?>
 
          </div>
-
-
-
+      </div>
+   </div>
 <?php get_footer(); ?>
